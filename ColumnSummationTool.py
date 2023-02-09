@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog as fd
 import openpyxl
+# from ColSumWindow import ColSumWindow
 
 class ColumnSummationTool:
 
@@ -14,24 +15,20 @@ class ColumnSummationTool:
         self.ws1 = ""
         self.ws2 = ""
 
+        # # Set up the GUI
+        # self.gui = ColSumWindow()
 
 
 
 
+    def openWorkbooks(self, workbookNumber, fileName):
+        if workbookNumber == 1:
+            self.wb1 = openpyxl.load_workbook(fileName)
+        elif workbookNumber==2:
+            self.wb2 = openpyxl.load_workbook(fileName)
 
-    def main(self):
-        # self.createWindow()
+        print("Loaded workbook {num}".format(num=workbookNumber))
+
+
+    def addCol(self):
         pass
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    c= ColumnSummationTool()
-    c.main()
-
-
-
