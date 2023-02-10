@@ -4,7 +4,6 @@ from ColumnSummationTool import ColumnSummationTool
 
 
 class ColSumWindow:
-
     def __init__(self):
         # If values are set correctly, allowing you to save to file
         self.canSaveToFile = False
