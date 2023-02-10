@@ -73,8 +73,6 @@ class ColumnSummationTool:
             except:
                 print("[First Column] Non-number value at row {row} with value {value}".format(row=position, value=value))
 
-
-
         return sum1, sum2
 
 
