@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog as fd
 from ColumnSummationTool import ColumnSummationTool
-import time
+
 
 class ColSumWindow:
 
