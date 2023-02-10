@@ -138,7 +138,6 @@ class ColSumWindow:
 
 
     def load(self):
-
         try:
             with open("config.txt", "r") as f:
                 line = f.readline()
