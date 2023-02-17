@@ -127,7 +127,7 @@ class ColSumWindow:
             col1 = str(self.firstColEntry.get())
             col2 = str(self.secColEntry.get())
             saveString = f"{wb1};{wb2};{sheet1};{sheet2};{col1};{col2}"
-            with open("config.txt", "w") as f:
+            with open("../pandas version/config.txt", "w") as f:
                 f.write(saveString)
             self.infoLabel.config(text="Config saved")
             self.infoLabel.config(bg="green")
@@ -139,7 +139,7 @@ class ColSumWindow:
     def load(self):
 
         try:
-            with open("config.txt", "r") as f:
+            with open("../pandas version/config.txt", "r") as f:
                 line = f.readline()
             wb1, wb2, sheet1, sheet2, col1, col2 = line.split(";")
             self.excelTool.openWorkbooks(1, wb1)
